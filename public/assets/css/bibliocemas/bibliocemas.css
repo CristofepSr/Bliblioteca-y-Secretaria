@@ -1,0 +1,78 @@
+body{
+    background-color: #121826;
+    margin: 0;
+}
+
+.header{
+    background-color: #1c2438;
+    padding: 10px;
+}
+
+.menu{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.menu img{
+    width: 70px;
+    height: 70px;
+}
+
+.menu_list {
+    width: 600px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: .2rem;
+}
+
+.menu_list li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.bibliocemas{
+    background-image: url(https://concepto.de/wp-content/uploads/2015/03/biblioteca-e1550105787397-800x400.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100wv;
+    height: 500px;
+    margin-top: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bibliocemas p{
+    font-size: 100px;
+    color: #fff;
+}
+
+.book_container{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.books{
+    border: 1px solid blueviolet;
+    width: 360px;
+    text-align: center;
+}
+.book_portada{
+    width: auto;
+    max-width: 350px;
+    height: auto;
+}
+
+.book_titulo{
+    color: #fff;
+    font-size: 20px;
+    display: inline;
+}
