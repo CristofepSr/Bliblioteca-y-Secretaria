@@ -15,7 +15,7 @@
             <img src="../assets/img/logo.png" alt="">
             <ul class="menu_list">
                 <li>
-                    <a href="#">Home</a>
+                    <a href="../index.php">Home</a>
                 </li>
                 <li>
                     <a href="#">Libros</a>
@@ -60,18 +60,22 @@
             </div>
         </div>
 
-        <div id="alquilar">
-            <div></div>
-            <div>
-                <form action="" method="post">
-                    <label for="">nombre completo</label>
-                    <input type="text" name="" id="">
-                    <label for="">correo Electronico</label>
-                    <input type="email" name="" id="">
-                    <label for="">curso</label>
-                    <input type="text" name="" id="">
-                    <label for="">nombre del libro</label>
-                    <input type="text" name="" id="">
+        <div class="alquilar" id="alquilar">
+            <div class="descriptioon_alquilar">
+                <h2>Alquilar Libros</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptas, adipisci voluptatem ipsum dolorum eius! Rem veniam aliquid, eum ullam eaque culpa consequatur porro nobis tempore? Vitae, repellat? Aut, sequi.</p>
+            </div>
+            <div class="form_alquilar">
+                <form action="#" method="post">
+                    <label for="fullname">nombre completo:</label>
+                    <input type="text" name="fullname" id="fullname" require placeholder="Nombre Completo">
+                    <label for="email">Correo Electronico:</label>
+                    <input type="email" name="email" id="email" require placeholder="correo Electronico">
+                    <label for="curso">curso:</label>
+                    <input type="text" name="curso" id="curso" require placeholder="Curso">
+                    <label for="book">nombre del libro:</label>
+                    <input type="text" name="book" id="book" require placeholder="Introdusca el nombre del Libro">
+                    <button type="submit">Alquilar</button>
                 </form>
             </div>
         </div>
