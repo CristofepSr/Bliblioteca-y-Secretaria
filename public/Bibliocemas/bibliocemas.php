@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bibliocemas</title>
-    <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="../assets/css/bibliocemas/bibliocemas.css">
-    <link rel="stylesheet" href="../assets/css/fonst.css">
-    <link rel="stylesheet" href="../assets/css/scrollbar.css">
+    <link rel="shortcut icon" href="../../assets/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../assets/css/bibliocemas/bibliocemas.css">
+    <link rel="stylesheet" href="../../assets/css/fonst.css">
+    <link rel="stylesheet" href="../../assets/css/scrollbar.css">
 </head>
 <body>
     <header class="header">
@@ -30,7 +30,8 @@
         </nav>
     </header>
     <main>
-        <div class="bibliocemas">
+        <div class="bibliot">
+            <img src="https://concepto.de/wp-content/uploads/2015/03/biblioteca-e1550105787397-800x400.jpg" alt="">
             <p>Bibliocemas</p>
         </div>
         <div class="book_container">

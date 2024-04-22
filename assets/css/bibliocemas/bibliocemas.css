@@ -34,20 +34,17 @@ body{
     color: #fff;
 }
 
-.bibliocemas{
-    background-image: url(https://concepto.de/wp-content/uploads/2015/03/biblioteca-e1550105787397-800x400.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100wv;
-    height: 500px;
+.bibliot{
     margin-top: 20px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 900px;
 }
 
-.bibliocemas p{
+.bibliot img{
+    width: auto;
+    height: 500px;
+}
+
+.bibliot p{
     font-size: 100px;
     color: #fff;
 }
