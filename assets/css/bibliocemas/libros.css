@@ -1,0 +1,24 @@
+body{
+    background-color: #121826;
+    margin: 0;
+}
+
+.libs{
+    margin-top: 20px;
+    width: auto;
+    position: relative;
+}
+
+.libs img{
+    width: 99.6vw;
+    height: 600px;
+}
+
+.libs p{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 200px;
+    color: #fff;
+}

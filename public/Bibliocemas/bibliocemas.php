@@ -6,6 +6,7 @@
     <title>Bibliocemas</title>
     <link rel="shortcut icon" href="../../assets/img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../../assets/css/bibliocemas/bibliocemas.css">
+    <link rel="stylesheet" href="../../assets/css/bibliocemas/menu.css">
     <link rel="stylesheet" href="../../assets/css/fonst.css">
     <link rel="stylesheet" href="../../assets/css/scrollbar.css">
 </head>
@@ -18,7 +19,7 @@
                     <a href="../index.php">Home</a>
                 </li>
                 <li>
-                    <a href="#">Libros</a>
+                    <a href="./Libros/libros.php">Libros</a>
                 </li>
                 <li>
                     <a href="#alquilar">Alquielar</a>
