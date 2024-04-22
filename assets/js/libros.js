@@ -42,7 +42,7 @@ const books = [
         linkDescargar: ''
     },
     {
-        nombre : 'Eloquent_JavaScript',
+        nombre : 'Eloquent JavaScript',
         portada: 'https://i.postimg.cc/ZRsBhRmm/Eloquent-Java-Script.png',
         linkVer: '',
         linkDescargar: ''

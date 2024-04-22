@@ -1,0 +1,36 @@
+body{
+    background-color: #121826;
+    margin: 0;
+}
+
+header{
+    padding: .3rem;
+    background-color: #1c2438;
+}
+
+.navbar__list{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar__item{
+    padding: 10px;
+}
+
+.navbar__item a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+}
+
+.navbar__item:hover{
+    scale: 1.4;
+    transition: 2s;
+}
+
+.navbar__item img{
+    width: 80px;
+    height: 80px;
+}

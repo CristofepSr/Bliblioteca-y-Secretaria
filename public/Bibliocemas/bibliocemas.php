@@ -35,31 +35,8 @@
             <img src="https://concepto.de/wp-content/uploads/2015/03/biblioteca-e1550105787397-800x400.jpg" alt="">
             <p>Bibliocemas</p>
         </div>
-        <div class="book_container">
-            <div class="books">
-                <img class="book_portada" src="https://grajedamena.ufm.edu/wp-content/uploads/2019/05/el-senor-presidente_rjdqtn.jpg" alt="#">
-                <p class="book_titulo">Titulo</p>
-            </div>
-            <div class="books">
-                <img class="book_portada" src="https://grajedamena.ufm.edu/wp-content/uploads/2019/05/el-senor-presidente_rjdqtn.jpg" alt="#">
-                <p class="book_titulo">Titulo</p>
-            </div>
-            <div class="books">
-                <img class="book_portada" src="https://grajedamena.ufm.edu/wp-content/uploads/2019/05/el-senor-presidente_rjdqtn.jpg" alt="#">
-                <p class="book_titulo">Titulo</p>
-            </div>
-            <div class="books">
-                <img class="book_portada" src="https://grajedamena.ufm.edu/wp-content/uploads/2019/05/el-senor-presidente_rjdqtn.jpg" alt="#">
-                <p class="book_titulo">Titulo</p>
-            </div>
-            <div class="books">
-                <img class="book_portada" src="https://grajedamena.ufm.edu/wp-content/uploads/2019/05/el-senor-presidente_rjdqtn.jpg" alt="#">
-                <p class="book_titulo">Titulo</p>
-            </div>
-            <div class="books">
-                <img class="book_portada" src="https://grajedamena.ufm.edu/wp-content/uploads/2019/05/el-senor-presidente_rjdqtn.jpg" alt="#">
-                <p class="book_titulo">Titulo</p>
-            </div>
+
+        <div class="books" id="books">
         </div>
 
         <div class="alquilar" id="alquilar">
@@ -82,5 +59,40 @@
             </div>
         </div>
     </main>
+
+    <script type="module">
+    import books from '../../../assets/js/libros.js';
+
+    function createBooks(book) {
+        const randomIndex = Math.floor(Math.random() * books.length);
+        const bookRandom = books[randomIndex];
+
+        const cart = document.createElement('div');
+        cart.classList.add('cart');
+    
+        if (bookRandom.portada) {
+            const img = document.createElement('img');
+            img.src = bookRandom.portada;
+            cart.appendChild(img);
+        }
+
+        const name = document.createElement('p');
+        name.textContent = bookRandom.nombre;
+        name.classList.add('title');
+        cart.appendChild(name);
+        
+        return cart;
+    }
+
+    const container = document.getElementById('books');
+
+    books.forEach(book => {
+        if (book.nombre !== '') {
+            const cart = createBooks(book);
+            container.appendChild(cart);
+        }
+    }); 
+</script>
+
 </body>
 </html>

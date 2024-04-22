@@ -24,7 +24,7 @@ body{
     color: #fff;
 }
 
-.book_container{
+.books{
     margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -33,17 +33,18 @@ body{
     margin-left: 20px;
 }
 
-.books{
+.cart{
     width: 360px;
     text-align: center;
 }
-.book_portada{
+
+.cart img{
     width: auto;
-    max-width: 350px;
-    height: auto;
+    max-width: 330px;
+    height: 440px;
 }
 
-.book_titulo{
+.title{
     color: #fff;
     font-size: 20px;
     display: inline;
