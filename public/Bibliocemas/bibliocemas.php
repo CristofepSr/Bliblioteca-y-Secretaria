@@ -6,6 +6,7 @@
     <title>Bibliocemas</title>
     <link rel="shortcut icon" href="../../assets/img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../../assets/css/bibliocemas/bibliocemas.css">
+    <link rel="stylesheet" href="../../assets/css/bibliocemas/carts.css">
     <link rel="stylesheet" href="../../assets/css/bibliocemas/menu.css">
     <link rel="stylesheet" href="../../assets/css/fonst.css">
     <link rel="stylesheet" href="../../assets/css/scrollbar.css">
@@ -13,7 +14,7 @@
 <body>
     <header class="header">
         <nav class="menu">
-            <img src="../assets/img/logo.png" alt="">
+            <img src="../../assets/img/logo.png" alt="">
             <ul class="menu_list">
                 <li>
                     <a href="../index.php">Home</a>
@@ -66,21 +67,34 @@
     function createBooks(book) {
         const randomIndex = Math.floor(Math.random() * books.length);
         const bookRandom = books[randomIndex];
-
         const cart = document.createElement('div');
         cart.classList.add('cart');
-    
-        if (bookRandom.portada) {
+        
+        if (book.portada) {
             const img = document.createElement('img');
             img.src = bookRandom.portada;
             cart.appendChild(img);
         }
 
+        const cart_description = document.createElement('div');
+        cart_description.classList.add('cart_description')
+        cart.appendChild(cart_description)
+
         const name = document.createElement('p');
         name.textContent = bookRandom.nombre;
         name.classList.add('title');
-        cart.appendChild(name);
-        
+        cart_description.appendChild(name);
+
+        const ver = document.createElement('a');
+        ver.textContent = "Ver"; // Set appropriate text for the link
+        ver.href = bookRandom.linkVer; // Set href attribute for the link
+        cart_description.appendChild(ver);
+
+        const descargar = document.createElement('a');
+        descargar.textContent = "Descargar"; // Set appropriate text for the link
+        descargar.href = bookRandom.linkDescargar; // Set href attribute for the link
+        cart_description.appendChild(descargar);
+
         return cart;
     }
 

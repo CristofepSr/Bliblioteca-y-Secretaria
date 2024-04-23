@@ -22,29 +22,3 @@ body{
     font-size: 200px;
     color: #fff;
 }
-
-.books{
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 20px;
-    margin-left: 20px;
-}
-
-.cart{
-    width: 360px;
-    text-align: center;
-}
-
-.cart img{
-    width: auto;
-    max-width: 330px;
-    height: 440px;
-}
-
-.title{
-    color: #fff;
-    font-size: 20px;
-    display: inline;
-}
