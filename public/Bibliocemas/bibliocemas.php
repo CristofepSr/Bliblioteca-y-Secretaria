@@ -60,9 +60,8 @@
             </div>
         </div>
     </main>
-
-    <script type="module">
-    import books from '../../../assets/js/libros.js';
+<script type="module">
+    import books from '../../assets/js/libros.js'
 
     function createBooks(book) {
         const randomIndex = Math.floor(Math.random() * books.length);
@@ -86,14 +85,11 @@
         cart_description.appendChild(name);
 
         const ver = document.createElement('a');
-        ver.textContent = "Ver"; // Set appropriate text for the link
-        ver.href = bookRandom.linkVer; // Set href attribute for the link
+        ver.textContent = "Ver"; 
+        ver.href = bookRandom.linkVer;
+        ver.setAttribute('target', '_blank');
         cart_description.appendChild(ver);
 
-        const descargar = document.createElement('a');
-        descargar.textContent = "Descargar"; // Set appropriate text for the link
-        descargar.href = bookRandom.linkDescargar; // Set href attribute for the link
-        cart_description.appendChild(descargar);
 
         return cart;
     }
@@ -101,11 +97,12 @@
     const container = document.getElementById('books');
 
     books.forEach(book => {
-        if (book.nombre !== '') {
-            const cart = createBooks(book);
-            container.appendChild(cart);
-        }
-    }); 
+        if (books.length > 0)
+            if (book.nombre !== '') {
+                const cart = createBooks(book);
+                container.appendChild(cart);
+            }
+        }); 
 </script>
 
 </body>

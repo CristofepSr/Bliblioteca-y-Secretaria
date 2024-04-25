@@ -40,8 +40,8 @@
     <div class="books" id="books">
     </div>
 
-</div>
     </main>
+    
     <script type="module">
     import books from '../../../assets/js/libros.js';
 
@@ -65,27 +65,30 @@
         cart_description.appendChild(name);
 
         const ver = document.createElement('a');
-        ver.textContent = "Ver"; // Set appropriate text for the link
-        ver.href = book.linkVer; // Set href attribute for the link
+        ver.textContent = "Ver"; 
+        ver.href = book.linkVer;
+        ver.setAttribute('target', '_blank');
         cart_description.appendChild(ver);
-
-        const descargar = document.createElement('a');
-        descargar.textContent = "Descargar"; // Set appropriate text for the link
-        descargar.href = book.linkDescargar; // Set href attribute for the link
-        cart_description.appendChild(descargar);
 
         return cart;
     }
 
     const container = document.getElementById('books');
 
-    books.forEach(book => {
-        if (book.nombre !== '') {
-            const cart = createBooks(book);
-            container.appendChild(cart);
-        }
-    });        
+    // Verificar si hay libros para mostrar antes de ejecutar el forEach
+    if (books.length > 0) {
+        books.forEach(book => {
+            if (book.nombre !== '') {
+                const cart = createBooks(book);
+                container.appendChild(cart);
+            }
+        });
+    } else {
+        // Si no hay libros, mostrar un mensaje o realizar alguna acción apropiada
+        console.log("No hay libros para mostrar.");
+    }
 </script>
+
 
 </body>
 </html>
