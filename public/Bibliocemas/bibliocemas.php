@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../../assets/css/bibliocemas/bibliocemas.css">
     <link rel="stylesheet" href="../../assets/css/bibliocemas/carts.css">
     <link rel="stylesheet" href="../../assets/css/bibliocemas/menu.css">
+    <link rel="stylesheet" href="../../assets/css/bibliocemas/footer.css">
+
     <link rel="stylesheet" href="../../assets/css/fonst.css">
     <link rel="stylesheet" href="../../assets/css/scrollbar.css">
 </head>
@@ -26,7 +28,7 @@
                     <a href="#alquilar">Alquielar</a>
                 </li>
                 <li>
-                    <a href="#">Contact Us</a>
+                    <a href="#">Uniformes</a>
                 </li>
             </ul>
         </nav>
@@ -40,26 +42,52 @@
         <div class="books" id="books">
         </div>
 
-        <div class="alquilar" id="alquilar">
-            <div class="descriptioon_alquilar">
-                <h2>Alquilar Libros</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptas, adipisci voluptatem ipsum dolorum eius! Rem veniam aliquid, eum ullam eaque culpa consequatur porro nobis tempore? Vitae, repellat? Aut, sequi.</p>
-            </div>
-            <div class="form_alquilar">
-                <form action="#" method="post">
-                    <label for="fullname">nombre completo:</label>
-                    <input type="text" name="fullname" id="fullname" require placeholder="Nombre Completo">
-                    <label for="email">Correo Electronico:</label>
-                    <input type="email" name="email" id="email" require placeholder="correo Electronico">
-                    <label for="curso">curso:</label>
-                    <input type="text" name="curso" id="curso" require placeholder="Curso">
-                    <label for="book">nombre del libro:</label>
-                    <input type="text" name="book" id="book" require placeholder="Introdusca el nombre del Libro">
-                    <button type="submit">Alquilar</button>
-                </form>
+
+
+<!-- Este es el pie de pagina -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Bibliocemas</h4>
+                    <ul>
+                        <li><a href="#">Nuestra mision</a></li>
+                        <li><a href="#">Comparte tus sugerencias</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Tienda online</h4>
+                    <ul>
+                        <li><a href="#">Uniformes</a></li>
+                      
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
-    </main>
+   </footer>
+ 
+
+
 <script type="module">
     import books from '../../assets/js/libros.js'
 
@@ -96,15 +124,13 @@
 
     const container = document.getElementById('books');
 
-    const maxIterations = 9;
-for (let i = 0; i < maxIterations && i < books.length; i++) {
-    const book = books[i];
-    if (book.nombre !== '') {
-        const cart = createBooks(book);
-        container.appendChild(cart);
-    }
-}
-
+    books.forEach(book => {
+        if (books.length > 0)
+            if (book.nombre !== '') {
+                const cart = createBooks(book);
+                container.appendChild(cart);
+            }
+        }); 
 </script>
 
 </body>
