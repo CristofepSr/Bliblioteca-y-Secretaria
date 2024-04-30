@@ -28,30 +28,39 @@ function createBooks(book) {
     return cart;
 }
 
-const container = document.getElementById('books');
-
-// Verificar si hay libros para mostrar antes de ejecutar el forEach
-if (books.length > 0) {
-    books.forEach(book => {
-        if (book.nombre !== '') {
-            const cart = createBooks(book);
-            container.appendChild(cart);
-        }
-    });
-} else {
-    // Si no hay libros, mostrar un mensaje o realizar alguna acción apropiada
-    console.log("No hay libros para mostrar.");
-}
-
-function filtral(areas){
+function filtral(area) {
+    const container = document.getElementById('books');
     container.innerHTML = '';
 
-    const filtarBooks = books.filtet(books => books.area == areas);
+    const filteredBooks = books.filter(book => book.area === area);
 
-    filtarBooks.forEach(book => {
-        if (book.nombre !== '') {
+    if (filteredBooks.length > 0) {
+        filteredBooks.forEach(book => {
             const cart = createBooks(book);
             container.appendChild(cart);
-        }
-    });
+        });
+    } else {
+        console.log(`No hay libros en el área ${area} para mostrar.`);
+    }
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const categoryList = document.querySelectorAll('.filtral__list li');
+    categoryList.forEach(item => {
+        item.addEventListener('click', function() {
+            filtral(this.textContent.toLowerCase());
+        });
+    });
+
+    const container = document.getElementById('books');
+    if (books.length > 0) {
+        books.forEach(book => {
+            if (book.nombre !== '') {
+                const cart = createBooks(book);
+                container.appendChild(cart);
+            }
+        });
+    } else {
+        console.log("No hay libros para mostrar.");
+    }
+});
