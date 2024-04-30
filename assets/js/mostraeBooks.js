@@ -30,8 +30,9 @@ function createBooks(book) {
 
 function filtral(area) {
     const container = document.getElementById('books');
-    container.innerHTML = '';
+    container.innerHTML = ''; // Clear existing books
 
+    // Filter books based on area
     const filteredBooks = books.filter(book => book.area === area);
 
     if (filteredBooks.length > 0) {
@@ -40,7 +41,10 @@ function filtral(area) {
             container.appendChild(cart);
         });
     } else {
-        console.log(`No hay libros en el área ${area} para mostrar.`);
+        let noBook = document.createElement('p');
+        noBook.textContent = 'No Hay Libros En Esta Area';
+        noBook.classList.add('noBook');
+        container.appendChild(noBook);
     }
 }
 
@@ -48,10 +52,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const categoryList = document.querySelectorAll('.filtral__list li');
     categoryList.forEach(item => {
         item.addEventListener('click', function() {
-            filtral(this.textContent.toLowerCase());
+            filtral(this.textContent.toLowerCase()); // Pass the lowercase area name to filtral
         });
     });
 
+    // Populate books initially
     const container = document.getElementById('books');
     if (books.length > 0) {
         books.forEach(book => {
