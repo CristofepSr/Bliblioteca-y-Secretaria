@@ -26,7 +26,7 @@
                     <a href="#alquilar">Alquielar</a>
                 </li>
                 <li>
-                    <a href="#">Uniformes</a>
+                    <a href="#">Contact Us</a>
                 </li>
             </ul>
         </nav>
@@ -96,13 +96,15 @@
 
     const container = document.getElementById('books');
 
-    books.forEach(book => {
-        if (books.length > 0)
-            if (book.nombre !== '') {
-                const cart = createBooks(book);
-                container.appendChild(cart);
-            }
-        }); 
+    const maxIterations = 9;
+for (let i = 0; i < maxIterations && i < books.length; i++) {
+    const book = books[i];
+    if (book.nombre !== '') {
+        const cart = createBooks(book);
+        container.appendChild(cart);
+    }
+}
+
 </script>
 
 </body>

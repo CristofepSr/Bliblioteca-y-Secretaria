@@ -1,5 +1,5 @@
 .books {
-    margin-top: 30px auto 0 auto;
+    margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -8,13 +8,13 @@
 }
 
 .cart {
-    width: 360px;
+    width: 330px;
     position: relative;
     border-radius: 24px;
 }
 
 .cart img {
-    width: auto;
+    width: 330px;
     max-width: 330px;
     height: 440px;
     border-radius: 24px;
@@ -42,7 +42,7 @@
     text-shadow: 5px 5px 10px black;
     font-size: 20px;
     font-weight: bold;
-    display: block;
+    display: inline-block;
 }
 
 
@@ -51,12 +51,15 @@
     background-color: aliceblue;
     color: black;
     padding: 8px;
-    margin-right: 5px;
     border-radius: 10px;
-    display: inline-block;
-    transition: background-color 0.3s ease;
+    margin: 0 auto;
+    display: block;
+    width: 90px;
+    transition: 0.8s ease;
+    border: 1px solid black;
 }
 
 .cart_description a:hover {
     background-color: greenyellow;
+    scale: 1.4;
 }

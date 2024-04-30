@@ -8,8 +8,8 @@ const books = [
     {
         nombre : 'Manual de PHP',
         portada: 'https://i.postimg.cc/NjvytS3K/Portada-Manual-de-PHP.png',
-        linkVer: 'https://drive.google.com/file/d/14pu47oN30hujuwgD-sLeVkINh8WhnEfh/view?usp=sharing',
         area: 'informatica',
+        linkVer: 'https://drive.google.com/file/d/14pu47oN30hujuwgD-sLeVkINh8WhnEfh/view?usp=sharing',
     },
     {
         nombre : 'Introduction to Docker',
@@ -115,7 +115,6 @@ const books = [
 //         portada: '',
 //         area: '',
 //         linkVer: '',
-//         linkDescargar: ''
 //     }
 
 export default books
