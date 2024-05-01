@@ -26,7 +26,7 @@
                     <a href="#alquilar">Alquilar</a>
                 </li>
                 <li>
-                    <a href="#">Contact Us</a>
+                <a href="./contact us.html">Contact Us</a>
                 </li>
             </ul>
         </nav>
@@ -50,7 +50,7 @@
         </div>
 
     </main>
-    <script type="module" src="../../../assets/js/mostraeBooks.js"></script>
+    <script type="module" src="../../../assets/js/mostroFiltradoBooks.js"></script>
 
 </body>
 </html>

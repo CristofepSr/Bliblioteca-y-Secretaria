@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us</title>
+        <link rel="shortcut icon" href="../../assets/img/logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="../../assets/css/bibliocemas/contact us.css">
+        <link rel="stylesheet" href="../../assets/css/bibliocemas/menu.css">
+        <link rel="stylesheet" href="../../assets/css/scrollbar.css">
+    </head>
+    <body>
+        <header class="header">
+            <nav class="menu">
+                <img src="../../assets/img/logo.png" alt="">
+                <ul class="menu_list">
+                    <li>
+                        <a href="../index.php">Home</a>
+                    </li>
+                    <li>
+                        <a href="./Libros/libros.php">Libros</a>
+                    </li>
+                    <li>
+                        <a href="#alquilar">Alquielar</a>
+                    </li>
+                    <li>
+                        <a href="./contact us.html">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="container">
+                <form action="../../src/views/contact.php" method="post">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="name"
+                        placeholder="Nombre Completo">
+                    <label for>Curso</label>
+                    <input type="text" name="course" id="course" placeholder="Curso">
+                    <textarea name="message" id="message" cols="30" rows="10"
+                        maxlength="200" placeholder="Mensaje..."></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </main>
+
+    </body>
 </html>

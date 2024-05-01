@@ -25,6 +25,7 @@
 
 .menu_list li a{
     font-size: 20px;
+    font-weight: bold;
     text-decoration: none;
     color: #fff;
 }

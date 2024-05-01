@@ -4,7 +4,7 @@ body{
 }
 
 .filtral{
-    background-color: aliceblue ;
+    background-color: #212632 ;
     padding: 1rem;
 }
 
@@ -15,7 +15,7 @@ body{
     align-items: center;
 
     font-size: 20px;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .filtral__list:hover{
