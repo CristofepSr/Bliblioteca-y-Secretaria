@@ -23,10 +23,10 @@
                     <a href="./libros.php">Libros</a>
                 </li>
                 <li>
-                    <a href="#alquilar">Alquilar</a>
+                <a href="./alquilar.html">Alquilar</a>
                 </li>
                 <li>
-                <a href="./contact us.html">Contact Us</a>
+                <a href="../contact us.html">Contact Us</a>
                 </li>
             </ul>
         </nav>
