@@ -3,6 +3,11 @@
     src: url(../fonst/Acem/Acme-Regular.ttf);
 }
 
+@font-face {
+    font-family: Yatra-One;
+    src: url(../fonst/YatraOne-Regular.ttf);
+}
+
 *{
     font-family: Acem;
 }
