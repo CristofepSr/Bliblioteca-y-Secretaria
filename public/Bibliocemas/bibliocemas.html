@@ -30,7 +30,7 @@
                     <a href="./Libros/alquilar.html">Alquilar</a>
                 </li>
                 <li>
-                <a href="./contact us.html">Contact Us</a>
+                <a href="./contact_us.html">Contact Us</a>
                 </li>
             </ul>
         </nav>

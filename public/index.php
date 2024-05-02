@@ -1,5 +1,10 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,22 +13,34 @@
     <link rel="stylesheet" href="../assets/css/fonst.css">
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
+
 <body>
-    <header>   
+    <header class="menu">
+        <img src="../assets/img/logo.png" alt="">
         <nav class="navbar">
             <ul class="navbar__list">
+                <li class="navbar__item">
+                    <a href="./index.php">Inicio</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="./Bibliocemas/bibliocemas.php">Bibliocemas</a>
+                </li>
                 <li class="navbar__item">
                     <a href="./Secretaria/secretaria.php">Secretaria</a>
                 </li>
                 <li class="navbar__item">
-                    <img src="../assets/img/logo.png" alt="Logo">
-                </li>
-                <li class="navbar__item">
-                    <a href="./Bibliocemas/bibliocemas.php">Bibliocemas</a>
+                    <?php
+                    if (isset($_SESSION['username'])) {
+                        echo '<a href="../src/views/logout.php">' . $_SESSION['username'] . '</a>';
+                    } else {
+                        echo '<a href="./auth/check_in.php">Iniciar sesión</a>';
+                    }
+                    ?>
                 </li>
             </ul>
         </nav>
     </header>
 
 </body>
+
 </html>
