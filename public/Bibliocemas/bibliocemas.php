@@ -36,10 +36,11 @@
         </nav>
     </header>
     <main>
-        <!-- <div class="biblioteca">
+
+        <div class="biblioteca">
             <img class="biblioteca_img" src="../../assets/img/biblioteca.jpeg" alt="">
             <p>Bibliocemas</p>
-        </div> -->
+        </div>
 
         <div class="books" id="books">
         </div>
@@ -54,16 +55,7 @@
                             <li><a href="#">Comparte tus sugerencias</a></li>
                         </ul>
                     </div>
-                    <div class="footer-col">
-                        <h4>get help</h4>
-                        <ul>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">shipping</a></li>
-                            <li><a href="#">returns</a></li>
-                            <li><a href="#">order status</a></li>
-                            <li><a href="#">payment options</a></li>
-                        </ul>
-                    </div>
+                  
                     <div class="footer-col">
                         <h4>Tienda online</h4>
                         <ul>
@@ -71,7 +63,7 @@
                         </ul>
                     </div>
                     <div class="footer-col">
-                        <h4>follow us</h4>
+                        <h4>Siguenos</h4>
                         <div class="social-links">
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
                             <a href="#"><i class="fab fa-twitter"></i></a>
