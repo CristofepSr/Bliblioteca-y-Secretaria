@@ -1,12 +1,15 @@
 .header{
     background-color: #1c2438;
-    padding: 10px;
+    position: relative;
+    box-shadow: 10px 5px 5px rgb(0, 0, 0);
 }
 
 .menu{
     display: flex;
     text-align: center;
     justify-content: space-around;
+    padding: 10px;
+
 }
 
 .menu img{
