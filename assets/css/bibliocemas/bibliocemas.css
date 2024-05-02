@@ -4,18 +4,18 @@ body{
 }
 
 
-.bibliot{
+.biblioteca{
     margin-top: 20px;
     width: auto;
     position: relative;
 }
 
-.bibliot img{
-    width: 99.6vw;
+.biblioteca_img{
+    width: 100%;
     height: 600px;
 }
 
-.bibliot p{
+.biblioteca p{
     position: absolute;
     top: 25%;
     left: 50%;
