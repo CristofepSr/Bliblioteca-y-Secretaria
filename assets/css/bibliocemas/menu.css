@@ -12,9 +12,10 @@
     padding: 10px;
 }
 
-.menu img{
-    width: 80px;
-    height: 80px;
+.menu h1{
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
 }
 
 .menu_list {

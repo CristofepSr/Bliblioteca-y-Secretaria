@@ -43,9 +43,8 @@ textarea {
     resize: none;
     outline: none;
     border: none;
-    border-radius: 14px;
+    border-radius: 4px;
     margin-bottom: 20px;
-    text-align: center;
 }
 
 input[type="submit"] {

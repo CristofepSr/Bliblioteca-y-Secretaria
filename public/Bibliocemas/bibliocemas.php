@@ -18,7 +18,7 @@
 <body>
     <header class="header">
         <nav class="menu">
-            <img src="../../assets/img/logo.png" alt="">
+            <h1 class="logo_txt">Bibliocemas</h1>
             <ul class="menu_list">
                 <li>
                     <a href="../index.php">Home</a>
@@ -55,7 +55,6 @@
                             <li><a href="#">Comparte tus sugerencias</a></li>
                         </ul>
                     </div>
-                  
                     <div class="footer-col">
                         <h4>Tienda online</h4>
                         <ul>

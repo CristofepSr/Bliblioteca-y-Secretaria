@@ -15,7 +15,7 @@
 <body>
     <header class="header">
         <nav class="menu">
-            <img src="../../../assets/img/logo.png" alt="">
+            <h1 class="logo_txt">Bibliocemas</h1>
             <ul class="menu_list">
                 <li>
                     <a href="../bibliocemas.php">Home</a>
@@ -27,7 +27,7 @@
                 <a href="./alquilar.html">Alquilar</a>
                 </li>
                 <li>
-                <a href="../contact us.html">Contact Us</a>
+                <a href="../contact_us.html">Contact Us</a>
                 </li>
             </ul>
         </nav>

@@ -45,6 +45,41 @@ header{
     height: 80px;
 }
 
+.dropdown span {
+    cursor: pointer; 
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+}
+
+.dropdown ul {
+    display: none;
+    position: absolute;
+    background-color: #1c2438;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius:10px ;
+}
+
+.dropdown li {
+    padding: 10px;
+}
+
+.dropdown li a {
+    text-decoration: none;
+    color: #fff; 
+}
+
+.dropdown li a:hover{
+    color: #4fe64f;
+}
+
+.dropdown:hover ul {
+    display: block; /
+}
+
 .container{
     background-color: #283046;
     width: 500px;

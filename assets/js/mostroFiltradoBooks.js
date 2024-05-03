@@ -42,7 +42,7 @@ function filtral(area) {
         });
     } else {
         let noBook = document.createElement('p');
-        noBook.textContent = 'No Hay Libros En Esta Area';
+        noBook.textContent = 'No Hay Libros Disponibles En Esta Area';
         noBook.classList.add('noBook');
         container.appendChild(noBook);
     }
