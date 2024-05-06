@@ -24,12 +24,43 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: .2rem;
+   
 }
 
 .menu_list li a{
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     text-decoration: none;
     color: #fff;
+    display: inline-block;
+    padding: 0 20px; 
 }
+.menu_list li:hover{
+    transform: scale(1.1);
+}
+
+.contact{
+    margin-left: 20px;
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #15405c;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.contact:hover{
+    background-color: #e2f1f8;
+    color: #00021a;
+    transform: scale(1.1);
+}
+
+.logo {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
