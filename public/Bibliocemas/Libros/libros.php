@@ -56,7 +56,7 @@
 
     </main>
     <footer class="footer">
-        <div class="container">
+        <div class="containe">
             <div class="row">
                 <div class="footer-col">
                     <h4>Bibliocemas</h4>
