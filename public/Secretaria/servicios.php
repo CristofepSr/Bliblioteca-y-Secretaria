@@ -1,32 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Secretaria</title>
+    <title>Servicios</title>
     <link rel="shortcut icon" href="../../assets/img/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="../../assets/css/secretaria/secretaria.css">
+    <link rel="stylesheet" href="../../assets/css/secretaria/servicios.css">
     <link rel="stylesheet" href="../../assets/css/secretaria/menu.css">
 
     <link rel="stylesheet" href="../../assets/css/fonst.css">
     <link rel="stylesheet" href="../../assets/css/scrollbar.css">
 </head>
+
 <body>
     <header class="header">
         <nav class="menu">
             <ul class="menu_list">
                 <li>
-                    <a href="../index.php">Inicio</a>
+                    <a href="./secretaria.php">Inicio</a>
                 </li>
                 <li>
                     <a href="./sobre_nosotros.php">Sobre Nosotros</a>
                 </li>
                 <li>
-                    <a href="./servicios.php">Servicios</a>
+                    <div class="dropdown">
+                        <span><a href="./servicios.php">Servicios</a><span>
+                            <ul>
+                                <li><a href="#">Emitir Certificaciones</a></li>
+                                <li><a href="#">Inscripción y Reinscripción</a></li>
+                                <li><a href="#">Archivo y Registro</a></li>
+                                <li><a href="#">Otros Servicios Académicos</a></li>
+                            </ul>
+                    </div>
                 </li>
                 <li>
                     <a href="./equipo.php">Equipo</a>
-                </li>                
+                </li>
                 <li>
                     <a href="./contacto.php">Contacto</a>
                 </li>

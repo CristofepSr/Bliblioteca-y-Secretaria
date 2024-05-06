@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Secretaria</title>
+    <title>Sobre Nosotros</title>
     <link rel="shortcut icon" href="../../assets/img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../../assets/css/secretaria/secretaria.css">
     <link rel="stylesheet" href="../../assets/css/secretaria/menu.css">
@@ -16,7 +16,7 @@
         <nav class="menu">
             <ul class="menu_list">
                 <li>
-                    <a href="../index.php">Inicio</a>
+                    <a href="./secretaria.php">Inicio</a>
                 </li>
                 <li>
                     <a href="./sobre_nosotros.php">Sobre Nosotros</a>
