@@ -21,7 +21,7 @@
             <h1 class="logo_txt">Bibliocemas</h1>
             <ul class="menu_list">
                 <li>
-                    <a href="../index.php">Home</a>
+                    <a href="../index.php">Inicio</a>
                 </li>
                 <li>
                     <a href="./Libros/libros.php">Libros</a>
@@ -64,10 +64,8 @@
                     <div class="footer-col">
                         <h4>Siguenos</h4>
                         <div class="social-links">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.facebook.com/p/Centro-Educativo-Manuel-Acevedo-Serrano-F-y-A-100063508002864/?locale=es_LA" target="_blank"><img src="../../assets/img/svg/facebook.svg" alt=""></a>
+                            <a href="https://www.instagram.com/cemas_1963/" target="_blank"><img src="../../assets/img/svg/instagram.svg" alt=""></a>
                         </div>
                     </div>
                 </div>

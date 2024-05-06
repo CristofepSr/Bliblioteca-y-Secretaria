@@ -4,9 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Alquilar</title>
-        <link rel="shortcut icon" href="../../../assets/img/logo.png" type="image/x-icon">
+        <link rel="shortcut icon" href="../../../assets/img/logo.png"
+            type="image/x-icon">
         <link rel="stylesheet" href="../../../assets/css/bibliocemas/alquilar.css">
         <link rel="stylesheet" href="../../../assets/css/bibliocemas/menu.css">
+        <link rel="stylesheet" href="../../../assets/css/bibliocemas/footer.css">
 
         <!-- especiales -->
         <link rel="stylesheet" href="../../../assets/css/fonst.css">
@@ -18,16 +20,16 @@
                 <h1 class="logo_txt">Bibliocemas</h1>
                 <ul class="menu_list">
                     <li>
-                        <a href="../bibliocemas.php">Home</a>
+                        <a href="../bibliocemas.php">Inicio</a>
                     </li>
                     <li>
                         <a href="./libros.php">Libros</a>
                     </li>
                     <li>
-                    <a href="./alquilar.html">Alquilar</a>
+                        <a href="./alquilar.html">Alquilar</a>
                     </li>
                     <li>
-                    <a href="../contact_us.html">Contact Us</a>
+                        <a href="../contact_us.html">Contact Us</a>
                     </li>
                 </ul>
             </nav>
@@ -36,16 +38,46 @@
             <div class="container">
                 <form action="../../../src/views/alquilar.php" method="post">
                     <label for="fullname">Nombre Complrto</label>
-                    <input type="text" name="fullname" id="fullname" placeholder="Nombre Completo">
+                    <input type="text" name="fullname" id="fullname"
+                        placeholder="Nombre Completo">
                     <label for="email">Correo Electronico</label>
-                    <input type="email" name="email" id="email" placeholder="Correo Electronico">
+                    <input type="email" name="email" id="email"
+                        placeholder="Correo Electronico">
                     <label for>Curso</label>
-                    <input type="text" name="course" id="course" placeholder="Curso">
+                    <input type="text" name="course" id="course"
+                        placeholder="Curso">
                     <label for="book">Nombre del Libro</label>
-                    <input type="text" name="book" id="book" placeholder="Nombre del Libro">
+                    <input type="text" name="book" id="book"
+                        placeholder="Nombre del Libro">
                     <input type="submit" value="Enviar">
                 </form>
             </div>
         </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Bibliocemas</h4>
+                        <ul>
+                            <li><a href="#">Nuestra mision</a></li>
+                            <li><a href="#">Comparte tus sugerencias</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Tienda online</h4>
+                        <ul>
+                            <li><a href="#">Uniformes</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Siguenos</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/p/Centro-Educativo-Manuel-Acevedo-Serrano-F-y-A-100063508002864/?locale=es_LA" target="_blank"><img src="../../../assets/img/svg/facebook.svg" alt></a>
+                            <a href="https://www.instagram.com/cemas_1963/" src="../../../assets/img/svg/instagram.svg" alt></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
     </body>
