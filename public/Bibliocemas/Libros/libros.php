@@ -31,7 +31,7 @@
                     <a href="./alquilar.html">Alquilar</a>
                 </li>
                 <li>
-                    <a href="../contact_us.html">Contact Us</a>
+                    <a class="contact" href="../contact_us.html">Contactanos</a>
                 </li>
             </ul>
         </nav>

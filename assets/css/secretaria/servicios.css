@@ -1,41 +1,20 @@
-body {
+body{
     background-color: #121826;
     margin: 0;
-}
-
-.dropdown span {
-    cursor: pointer; 
-    text-decoration: none;
-    color: #fff;
-    font-size: 25px;
-}
-
-.dropdown ul {
-    display: none;
-    position: absolute;
-    background-color: #1c2438;
-    list-style-type: none;
     padding: 0;
-    margin: 0;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
-.dropdown li {
-    padding: 10px;
+section {
+    background-color: #232536;
+    width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.dropdown li a {
-    text-decoration: none;
-    color: #fff; 
+section h2{
+    color: #f9f9f9;
 }
 
-.dropdown li a:hover {
-    color: #4fe64f;
-}
-
-.dropdown:hover ul {
-    display: block;
+article h3{
+    color: #f9f9f9;
 }

@@ -4,5 +4,5 @@ $_SESSION = array();
 
 session_destroy();
 
-header("Location: /public/auth/check_in.php");
+header("Location: /public/auth/registro.php");
 ?>

@@ -41,7 +41,7 @@ session_start();
                     
                 ';
                 } else {
-                    echo '<a href="./auth/check_in.php">Iniciar sesión</a>';
+                    echo '<a href="./auth/login.php">Iniciar sesión</a>';
                 }
                 ?>
             </li>

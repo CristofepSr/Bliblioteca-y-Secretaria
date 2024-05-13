@@ -34,15 +34,15 @@
                     <a href="./Libros/alquilar.html">Alquilar</a>
                 </li>
                 <li>
-                    <a class="contact" href="./contact_us.html">Contact Us</a>
+                    <a class="contact" href="./contact_us.html">Contactanos</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
 
-        <div class="biblioteca">
-           <div class="biblioteca_img"></div>
+    <div class="biblioteca">
+            <img class="biblioteca_img" src="../../assets/img/biblioteca.jpeg" alt="">
             <p>Bibliocemas</p>
         </div>
 
