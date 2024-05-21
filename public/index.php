@@ -20,7 +20,7 @@ session_start();
     <nav class="navbar">
         <ul class="navbar__list">
             <li class="navbar__item">
-                <a href="./index.php">Inicio</a>
+                <a href="./admin/admin.php">Inicio</a>
             </li>
             <li class="navbar__item">
                 <a href="./Bibliocemas/bibliocemas.php">Bibliocemas</a>

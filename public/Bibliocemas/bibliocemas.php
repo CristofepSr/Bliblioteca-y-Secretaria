@@ -22,7 +22,7 @@
 <body>
     <header class="header">
         <nav class="menu">
-            <h1 class="logo">Bibliocemas</h1>
+            <h1 class="logo_txt">Bibliocemas</h1>
             <ul class="menu_list">
                 <li>
                     <a href="../index.php">Inicio</a>

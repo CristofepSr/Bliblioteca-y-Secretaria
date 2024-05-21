@@ -6,9 +6,7 @@ $dbname = 'bibliAndSecret';
 
 $conn = new mysqli($host, $name, $pass, $dbname);
 
-if ($conn){
-    echo'Conecion Exitosa';
-}else{
-    echo 'Conecion Fallida'. mysqli_connect_error();
+if ($conn->connect_error) {
+    die("La conexión falló: " . $conn->connect_error);
 }
 ?>
