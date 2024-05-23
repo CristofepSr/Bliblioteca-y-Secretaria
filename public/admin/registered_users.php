@@ -1,3 +1,10 @@
+<?php
+include('../../src/config/database.php');
+
+$sql = "SELECT id, username, email, solicitado_en FROM user";
+$result = $conn->query($sql)
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +14,7 @@
     <link rel="shortcut icon" href="../../assets/img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../../assets/css/admin/admin.css">
     <link rel="stylesheet" href="../../assets/css/admin/navbar.css">
+    <link rel="stylesheet" href="../../assets/css/admin/table.css">
 
     <link rel="stylesheet" href="../../assets/css/fonst.css">
     <link rel="stylesheet" href="../../assets/css/scrollbar.css">
@@ -24,5 +32,29 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Correo Electronico</th>
+                <th>Se registro</th>
+            </tr>
+            <?php
+            if ($result -> num_rows > 0){
+                while($row = $result -> fetch_assoc()){
+                    echo '<tr>';
+                    echo '<td>' . $row["id"] . '</td>';
+                    echo '<td>' . $row["username"] . '</td>';
+                    echo '<td>' . $row["email"] . '</td>';
+                    echo '<td>' . $row["solicitado_en"] . '</td>';
+                    echo '</tr>';
+                };
+            }else {
+                echo "<tr><td colspan='3'>No se encontraron resultados</td></tr>";
+            }
+            ?>
+        </table>
+    </main>
 </body>
 </html>

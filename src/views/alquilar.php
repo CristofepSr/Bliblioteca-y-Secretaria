@@ -3,7 +3,7 @@ include "../config/database.php";
 
 if ($_SERVER["REQUEST_METHOD"]== "POST"){
     $fullname = $_POST["fullname"];
-    $email = $_POST["emal"];
+    $email = $_POST["email"];
     $course = $_POST["course"];
     $book = $_POST["book"];
 

@@ -1,3 +1,10 @@
+<?php
+include('../../src/config/database.php');
+
+$sql = "SELECT nombre, course, message, enviado_en FROM contact_us";
+$result = $conn->query($sql)
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +14,7 @@
     <link rel="shortcut icon" href="../../assets/img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../../assets/css/admin/admin.css">
     <link rel="stylesheet" href="../../assets/css/admin/navbar.css">
+    <link rel="stylesheet" href="../../assets/css/admin/table.css">
 
     <link rel="stylesheet" href="../../assets/css/fonst.css">
     <link rel="stylesheet" href="../../assets/css/scrollbar.css">
@@ -27,8 +35,25 @@
     <main>
         <table>
             <tr>
-                th*
+                <th>Nombre completo</th>
+                <th>Curso</th>
+                <th>Mensaje</th>
+                <th>Se envio</th>
             </tr>
+            <?php
+            if ($result -> num_rows > 0){
+                while($row = $result -> fetch_assoc()){
+                    echo '<tr>';
+                    echo '<td>' . $row["nombre"] . '</td>';
+                    echo '<td>' . $row["course"] . '</td>';
+                    echo '<td>' . $row["message"] . '</td>';
+                    echo '<td>' . $row["enviado_en"] . '</td>';
+                    echo '</tr>';
+                };
+            }else {
+                echo "<tr><td colspan='3'>No se encontraron resultados</td></tr>";
+            }
+            ?>
         </table>
     </main>
 </body>
