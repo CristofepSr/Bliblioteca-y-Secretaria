@@ -1,47 +1,75 @@
+:root {
+    --text: #01161E;
+    --background: #EFF6E0;
+    --primary: #124559;
+    --secondary: #598392;
+    --accent: #AEC3B0;
+}
+
+@font-face {
+    font-family: Edu_TAS_Beginner;
+    src: url(../font/Edu_TAS_Beginner/EduTASBeginner-VariableFont_wght.ttf);
+}
+
+* {
+    font-family: Edu_TAS_Beginner;
+}
+
 body {
-    background-color: #121826;
+    background-color: var(--background);
+    padding: 0;
     margin: 0;
 }
 
 header {
-    padding: .3rem;
-    background-color: #1c2438;
+    background-color: var(--primary);
+    padding: 1rem;
+    text-align: center;
+    color: var(--background);
+}
 
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--background);
+}
+
+.nav {
+    margin-top: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
-.menu img {
-    width: 80px;
-    height: 80px;
-}
-
-.navbar__list {
-    width: 700px;
+.nav_list {
+    width: 600px;
     list-style: none;
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
+    justify-content: space-around;
+    padding: 0.5rem;
+    margin: 0;
 }
 
-.navbar__item {
-    padding: 10px;
-}
-
-.navbar__item a {
+.nav_list li a {
+    font-size: 18px;
+    font-weight: bold;
     text-decoration: none;
-    color: #fff;
-    font-size: 25px;
+    color: var(--text);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
 
-.navbar__item img {
-    width: 80px;
-    height: 80px;
+.nav_list li a:hover,
+.nav_list li a:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    outline: none;
 }
 
 .dropdown span {
-    cursor: pointer; 
+    cursor: pointer;
     text-decoration: none;
     color: #fff;
     font-size: 25px;
@@ -55,7 +83,7 @@ header {
     padding: 0;
     margin: 0;
     border-bottom-left-radius: 10px;
-    border-bottom-right-radius:10px ;
+    border-bottom-right-radius: 10px;
 }
 
 .dropdown li {
@@ -64,13 +92,127 @@ header {
 
 .dropdown li a {
     text-decoration: none;
-    color: #fff; 
+    color: #fff;
 }
 
-.dropdown li a:hover{
+.dropdown li a:hover {
     color: #4fe64f;
 }
 
 .dropdown:hover ul {
-    display: block; /
+    display: block;
+}
+
+section {
+    width: 900px;
+    margin: 20px auto;
+}
+
+
+.departamentos {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.departamentos h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--primary);
+}
+
+.areas {
+    display: flex;
+    justify-content: center;
+}
+
+.area {
+    margin: 0 10px;
+    text-align: center;
+}
+
+.area:hover{
+    scale: 1.01;
+}
+
+.area a {
+    text-decoration: none;
+    color: var(--text);
+    display: block;
+}
+
+.area a:hover h3 {
+    color: var(--primary);
+}
+
+.area img {
+    width: 400px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.area h3 {
+    font-size: 18px;
+    margin: 0;
+    transition: color 0.3s;
+}
+
+.equipo {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.equipo h2 {
+    text-align: center;
+    color: var(--primary);
+}
+
+.members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.member {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.member h3 {
+    margin: 0;
+    font-size: 18px;
+    color: var(--text);
+}
+
+.member p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: var(--secondary);
+}
+
+footer {
+    background-color: var(--primary);
+    color: var(--background);
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    bottom: 0;
+    font-size: 0.875rem;
+}
+
+footer p {
+    margin: 0;
+    font-weight: normal;
 }

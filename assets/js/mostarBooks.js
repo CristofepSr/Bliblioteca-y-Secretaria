@@ -22,7 +22,7 @@ function createBooks(book) {
     cart_description.appendChild(name);
 
     const ver = document.createElement('a');
-    ver.textContent = "Ver";
+    ver.textContent = "Ver Libro";
     ver.href = bookRandom.linkVer;
     ver.setAttribute('target', '_blank');
     cart_description.appendChild(ver);

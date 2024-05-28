@@ -1,10 +1,27 @@
+:root {
+    --text: #01161E;
+    --background: #EFF6E0;
+    --primary: #124559;
+    --secondary: #598392;
+    --accent: #AEC3B0;
+}
+
+@font-face {
+    font-family: Edu_TAS_Beginner;
+    src: url(../../font/Edu_TAS_Beginner/EduTASBeginner-VariableFont_wght.ttf);
+}
+
+* {
+    font-family: Edu_TAS_Beginner;
+}
+
 body {
     background-color: #121826;
     margin: 0;
 }
 
 main {
-    height: 90vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,8 +30,6 @@ main {
 .container {
     width: 400px;
     padding: 2rem;
-    margin-top: 50px;
-    background-color: #1c2438;
     border-radius: 24px;
     display: flex;
     flex-direction: column;
@@ -22,44 +37,60 @@ main {
     align-items: center;
 }
 
+form {
+    background-color: var(--primary);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
 label {
-    color: #fff;
     display: block;
-    font-size: 1.3rem;
+    margin-bottom: 5px;
+    color: var(--background);
 }
 
-input[type="text"] {
-    width: 350px;
-    height: 50px;
-    display: block;
-    outline: none;
-    border: none;
-    border-radius: 14px;
-    margin-bottom: 20px;
-}
-
+input[type="text"],
+input[type="tel"],
 textarea {
-    width: 350px;
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--secondary);
+    border-radius: 5px;
+    background-color: var(--background);
+    color: var(--text);
     resize: none;
-    outline: none;
-    border: none;
-    border-radius: 4px;
-    margin-bottom: 20px;
 }
 
 input[type="submit"] {
     display: block;
-    width: 100%; 
-    height: 50px;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: var(--accent);
+    color: var(--primary);
     border: none;
-    border-radius: 14px;
+    padding: 10px 20px;
+    margin: 0 auto;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
-input[type="submit"]:hover{
-    background-color: #4CAF50;
-    color: white;
+input[type="submit"]:hover {
+    background-color: var(--secondary);
+}
+
+footer {
+    background-color: var(--primary);
+    color: var(--background);
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    bottom: 0;
+    font-size: 0.875rem;
+}
+
+footer p {
+    margin: 0;
+    font-weight: normal;
 }

@@ -8,41 +8,32 @@
     <link rel="shortcut icon" href="../../assets/img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../../assets/css/auth/sign_in.css">
 
-    <link rel="stylesheet" href="../../assets/css/fonst.css">
     <link rel="stylesheet" href="../../assets/css/scrollbar.css">
 </head>
 
 <body>
-    <header class="menu">
-        <img src="../../assets/img/logo.png" alt="">
-        <nav class="navbar">
-            <ul class="navbar__list">
-                <li class="navbar__item">
-                    <a href="../index.php">Inicio</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="../Bibliocemas/bibliocemas.php">Bibliocemas</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="../Secretaria/secretaria.php">Secretaria</a>
-                </li>
-                <li class="navbar__item">
-                    <?php
-                    if (isset($_SESSION['username'])) {
+<header>
+        <h1>Bibliocemas</h1>
+        <nav class="nav">
+            <ul class="nav_list">
+                <li><a href="../index.php">Inicio</a></li>
+                <li><a href="../index.php#departamentos">Departamentos</a></li>
+                <li><a href="../index.php#equipo">Equipo</a></li>
+                <li><?php
+                if (isset($_SESSION['username'])) {
                         echo '<div class="dropdown">
-                        <span>' . $_SESSION['username'] . '</span>
+                        <span>'. $_SESSION['username']. '</span>
                         <ul>
                             <li><a href="./user-settings/config.php">Configuración</a></li>
-                            <li><a href="../../src/views/logout.php">Cerrar Sesión</a></li>
+                            <li><a href="../src/views/logout.php">Cerrar Sesión</a></li>
                         </ul>
                     </div>
                     
                 ';
-                    } else {
-                        echo '<a href="../auth/login.php">Iniciar sesión</a>';
-                    }
-                    ?>
-                </li>
+                } else {
+                    echo '<a href="./auth/login.php">Iniciar sesión</a>';
+                }
+                ?></li>
             </ul>
         </nav>
     </header>
