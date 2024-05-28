@@ -47,7 +47,7 @@
         <div class="books" id="books">
         </div>
         <div id="alquilar" class="alquilar">
-            <form action="../../../src/views/alquilar.php" method="post">
+            <form action="../../../src/views/alquilar.php"post">
                 <label for="fullname">Nombre Complrto</label>
                 <input type="text" name="fullname" id="fullname" placeholder="Nombre Completo">
                 <label for="email">Correo Electronico</label>

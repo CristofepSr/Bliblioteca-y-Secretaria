@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Departamento de Secretaría</title>
+    <link rel="shortcut icon" href="../../assets/img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../../assets/css/secretaria/secretaria.css">
     <link rel="stylesheet" href="../../assets/css/secretaria/navbar.css">
 
@@ -179,7 +180,7 @@
                     </div>
                 </article>
                 <div>
-                    <form action="" method="post">
+                    <form action="../../src/views/contact.php" method="post">
                         <label for="name">Nombre:</label>
                         <input type="text" name="name" id="name" placeholder="Nombre">
 

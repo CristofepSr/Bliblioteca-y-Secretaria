@@ -28,12 +28,12 @@ function createBooks(book) {
     return cart;
 }
 
-function filtral(area) {
+function filtral(bookArea) {
     const container = document.getElementById('books');
     container.innerHTML = ''; // Clear existing books
 
     // Filter books based on area
-    const filteredBooks = books.filter(book => book.area === area);
+    const filteredBooks = books.filter(book => book.area === bookArea);
 
     if (filteredBooks.length > 0) {
         filteredBooks.forEach(book => {

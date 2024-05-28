@@ -22,13 +22,13 @@ $result = $conn->query($sql)
 <body>
 <header>
         <h1>Panel de Administración</h1>
-        <nav class="navbar">
-            <ul class="navbar__list">
-                <li><a href="./admin.php" >Inicio</a></li>
-                <li><a href="./messages.php">Messajes</a></li>
-                <li><a href="./registered_users.php" class="selet">Usuarios</a></li>
-                <li><a href="./rented_books.php">rented books</a></li>
-                <li><a href="../index.php" class="exit">Salir</a></li>
+        <nav class="nav">
+            <ul class="nav_list">
+                <li><a href="./admin.php">Inicio</a></li>
+                <li><a href="./messages.php">Mensajes</a></li>
+                <li><a href="./registered_users.php">Usuarios</a></li>
+                <li><a href="./rented_books.php">Libros Alquilados</a></li>
+                <li><a href="../index.php">Salir</a></li>
             </ul>
         </nav>
     </header>

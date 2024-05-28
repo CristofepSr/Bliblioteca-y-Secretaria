@@ -8,14 +8,14 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Departamento de Secretaría y Bibliocemas</title>
     <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
     <header>
-        <h1>Bibliocemas</h1>
+        <h1>Departamento de Secretaría y Bibliocemas</h1>
         <nav class="nav">
             <ul class="nav_list">
                 <li><a href="./index.php">Inicio</a></li>
@@ -27,7 +27,7 @@ session_start();
                         echo '<div class="dropdown">
                         <span>' . $_SESSION['username'] . '</span>
                         <ul>
-                            <li><a href="./user-settings/config.php">Configuración</a></li>
+                            <li><a href="./admin/admin.php">Admin</a></li>
                             <li><a href="../src/views/logout.php">Cerrar Sesión</a></li>
                         </ul>
                     </div>
@@ -62,7 +62,7 @@ session_start();
 
 
         <section id="equipo" class="equipo">
-            <h2>Equipo</h2>
+            <h2>Equipo De Desarrollo</h2>
             <div class="members">
                 <article class="member">
                     <div class="info">

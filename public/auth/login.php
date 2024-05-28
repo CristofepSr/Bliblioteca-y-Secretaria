@@ -13,7 +13,7 @@
 
 <body>
 <header>
-        <h1>Bibliocemas</h1>
+        <h1>Check in</h1>
         <nav class="nav">
             <ul class="nav_list">
                 <li><a href="../index.php">Inicio</a></li>
@@ -24,7 +24,7 @@
                         echo '<div class="dropdown">
                         <span>'. $_SESSION['username']. '</span>
                         <ul>
-                            <li><a href="./user-settings/config.php">Configuración</a></li>
+                            <li><a href="./admin/admin.php">Admin</a></li>
                             <li><a href="../src/views/logout.php">Cerrar Sesión</a></li>
                         </ul>
                     </div>

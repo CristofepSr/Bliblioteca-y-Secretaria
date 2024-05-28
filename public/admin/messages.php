@@ -1,8 +1,8 @@
 <?php
 include('../../src/config/database.php');
 
-$sql = "SELECT nombre, course, message, enviado_en FROM contact_us";
-$result = $conn->query($sql)
+$sql = "SELECT nombre, telefono, mensaje, fecha_envio FROM mensajes";
+$result = $conn->query($sql);
 ?>
 
 <!DOCTYPE html>
@@ -22,13 +22,13 @@ $result = $conn->query($sql)
 <body>
 <header>
         <h1>Panel de Administración</h1>
-        <nav class="navbar">
-            <ul class="navbar__list">
+        <nav class="nav">
+            <ul class="nav_list">
                 <li><a href="./admin.php">Inicio</a></li>
-                <li><a href="./messages.php" class="selet">Messajes</a></li>
+                <li><a href="./messages.php">Mensajes</a></li>
                 <li><a href="./registered_users.php">Usuarios</a></li>
-                <li><a href="./registered_users.php">rented books</a></li>
-                <li><a href="../index.php" class="exit">Salir</a></li>
+                <li><a href="./rented_books.php">Libros Alquilados</a></li>
+                <li><a href="../index.php">Salir</a></li>
             </ul>
         </nav>
     </header>
@@ -36,22 +36,22 @@ $result = $conn->query($sql)
         <table>
             <tr>
                 <th>Nombre completo</th>
-                <th>Curso</th>
+                <th>telefono</th>
                 <th>Mensaje</th>
                 <th>Se envio</th>
             </tr>
             <?php
-            if ($result -> num_rows > 0){
-                while($row = $result -> fetch_assoc()){
+            if ($result->num_rows > 0){
+                while($row = $result->fetch_assoc()){
                     echo '<tr>';
                     echo '<td>' . $row["nombre"] . '</td>';
-                    echo '<td>' . $row["course"] . '</td>';
-                    echo '<td>' . $row["message"] . '</td>';
-                    echo '<td>' . $row["enviado_en"] . '</td>';
+                    echo '<td>' . $row["telefono"] . '</td>';
+                    echo '<td>' . $row["mensaje"] . '</td>';
+                    echo '<td>' . $row["fecha_envio"] . '</td>';
                     echo '</tr>';
-                };
-            }else {
-                echo "<tr><td colspan='3'>No se encontraron resultados</td></tr>";
+                }
+            } else {
+                echo "<tr><td colspan='4'>No se encontraron resultados</td></tr>";
             }
             ?>
         </table>
