@@ -11,11 +11,12 @@ session_start();
     <title>Departamento de Secretaría y Bibliocemas</title>
     <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/scrollbar.css">
 </head>
 
 <body>
     <header>
-        <h1>Departamento de Secretaría y Bibliocemas</h1>
+        <h1>Departamento de Secretaría y Biblioteca</h1>
         <nav class="nav">
             <ul class="nav_list">
                 <li><a href="./index.php">Inicio</a></li>
@@ -66,54 +67,54 @@ session_start();
             <div class="members">
                 <article class="member">
                     <div class="info">
-                        <img src="https://i.postimg.cc/xjp9Jbfx/Aurora-Coronado.jpg" alt="">
+                        <img src="../assets/img/desarrolladore/Mariela García Díaz.png" alt="Mariela García Díaz">
                         <div class="text">
-                            <h3>Fulano de Tal</h3>
+                            <h3>Mariela García Díaz</h3>
                             <p><strong>Cargo:</strong> Product Owner</p>
                         </div>
                     </div>
                 </article>
                 <article class="member">
                     <div class="info">
-                        <img src="https://i.postimg.cc/xjp9Jbfx/Aurora-Coronado.jpg" alt="">
+                        <img src="../assets/img/desarrolladore/Alexander Espinal Valerio.jpg" alt="Alexander Espinal Valerio">
                         <div class="text">
-                            <h3>Fulano de Tal</h3>
+                            <h3>Alexander Espinal Valerio</h3>
+                            <p><strong>Cargo:</strong>Scrum Master</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="member">
+                    <div class="info">
+                        <img src="../assets/img/desarrolladore/Cristofep Suarez Rosario.jpg" alt="Cristofep Suarez Rosario">
+                        <div class="text">
+                            <h3>Cristofep Suarez Rosario</h3>
+                            <p><strong>Cargo:</strong>Development</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="member">
+                    <div class="info" >
+                        <img src="../assets/img/desarrolladore/Deibinson José García Acosta.jpg" alt="Deibinson José García Acosta">
+                        <div class="text">
+                            <h3>Deibinson José García Acosta</h3>
                             <p><strong>Cargo:</strong>Development</p>
                         </div>
                     </div>
                 </article>
                 <article class="member">
                     <div class="info">
-                        <img src="https://i.postimg.cc/xjp9Jbfx/Aurora-Coronado.jpg" alt="">
+                        <img src="../assets/img/desarrolladore/Brailin Jesús Ramírez Sánchez.jpg" alt="Brailin Jesús Ramírez Sánchez">
                         <div class="text">
-                            <h3>Fulano de Tal</h3>
+                            <h3>Brailin Jesús Ramírez Sánchez</h3>
                             <p><strong>Cargo:</strong>Development</p>
                         </div>
                     </div>
                 </article>
                 <article class="member">
                     <div class="info">
-                        <img src="https://i.postimg.cc/xjp9Jbfx/Aurora-Coronado.jpg" alt="">
+                        <img src="../assets/img/desarrolladore/Chrisopher Pierre Damis.jpg" alt="Chrisopher Pierre Damis">
                         <div class="text">
-                            <h3>Fulano de Tal</h3>
-                            <p><strong>Cargo:</strong> Scrum Master</p>
-                        </div>
-                    </div>
-                </article>
-                <article class="member">
-                    <div class="info">
-                        <img src="https://i.postimg.cc/xjp9Jbfx/Aurora-Coronado.jpg" alt="">
-                        <div class="text">
-                            <h3>Fulano de Tal</h3>
-                            <p><strong>Cargo:</strong>Development</p>
-                        </div>
-                    </div>
-                </article>
-                <article class="member">
-                    <div class="info">
-                        <img src="https://i.postimg.cc/xjp9Jbfx/Aurora-Coronado.jpg" alt="">
-                        <div class="text">
-                            <h3>Fulano de Tal</h3>
+                            <h3>Chrisopher Pierre Damis</h3>
                             <p><strong>Cargo:</strong>Development</p>
                         </div>
                     </div>

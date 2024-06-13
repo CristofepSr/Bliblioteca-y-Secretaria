@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"]== "POST"){
 
     if (mysqli_query($conn, $sql)){
         // Redireccionar a contact.php en src/Views/
-        header("Location: /public/Bibliocemas/Libros/alquilar.html");
+        header("Location: /public/Bibliocemas/Libros/libros.php");
         exit; // Asegúrate de salir del script después de la redirección
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);

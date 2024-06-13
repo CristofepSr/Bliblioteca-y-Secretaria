@@ -28,12 +28,7 @@
     <main>
         <section id="introduccion" class="introduccion">
             <article>
-                <p>Bienvenidos al Departamento de Secretaría Académica de nuestro centro educativo. Somos el núcleo
-                    administrativo que garantiza la correcta gestión de todos los aspectos académicos y administrativos,
-                    desde la emisión de certificaciones hasta la inscripción y archivo de registros. Nuestro objetivo es
-                    proporcionar un servicio eficiente y de alta calidad para apoyar el éxito de nuestros estudiantes y
-                    la
-                    comunidad educativa en general.</p>
+                <p>Bienvenidos al Departamento de Secretaría Académica de nuestro centro educativo. Somos el núcleo administrativo que garantiza la correcta gestión de todos los aspectos académicos y administrativos, desde la emisión de certificaciones hasta la inscripción y archivo de registros. Nuestro objetivo es proporcionar un servicio eficiente y de alta calidad para apoyar el éxito de nuestros estudiantes y la comunidad educativa en general.</p>
             </article>
         </section>
 
